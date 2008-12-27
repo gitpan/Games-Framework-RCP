@@ -1,0 +1,9 @@
+.git*
+.DS_Store
+t/boilerplate.t
+Debian_CPANTS.txt
+cover_db/*
+Makefile
+Makefile.old
+pm_to_blib
+blib/*
