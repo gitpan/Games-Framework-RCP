@@ -1,4 +1,4 @@
-# $Revision: 0.01_01 $
+# $Revision: 0.01_02 $
 # $Date: Sat Dec 27 17:00:00 2008 -0500 $
 # $Source: lib/Games/Framework/RCP.pm $
 
@@ -9,7 +9,7 @@ use 5.010;
 use warnings;
 use strict;
 
-our $VERSION = '0.01_01';
+our $VERSION = '0.01_02';
 
 1;
 
@@ -50,7 +50,7 @@ L<Class::Singleton|Class::Singleton>
 
 =head1 VERSION
 
-Version 0.01_01
+Version 0.01_02
 
 =head1 SYNOPSIS
 

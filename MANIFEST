@@ -19,6 +19,7 @@ lib/Games/Framework/RCP/Utilities/Colors.pm
 lib/Games/Framework/RCP/Utilities/Vars_Bool.pm
 lib/Games/Framework/RCP/Utilities/Vars_Ints.pm
 lib/Games/Framework/RCP/Utilities/Vars_Real.pm
+scripts/pg.sql
 t/00-load.t
 t/01_pod/pod-coverage.t
 t/01_pod/pod.t
