@@ -16,12 +16,9 @@ WriteMakefile(
     PL_FILES            => {},
     PREREQ_PM =>
     {
-        'Class::Singleton' => 1.4,
-        'DBD::Pg' => 2.11,
-        'Readonly' => 1.03,
+        'DBIx::Class' => 0.08010,
         'Exception::Class' => 1.23,
-        'Scalar::Util::Numeric' => 0.02,
-        #'Sub::Exporter' => 0.981,
+        'Sub::Exporter' => 0.981,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },
     clean               => { FILES => 'Games-Framework-RCP-*' },

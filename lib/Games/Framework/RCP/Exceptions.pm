@@ -1,34 +1,33 @@
-# $Revision: 0.02 $
-# $Date: Sat Dec 27 17:00:00 2008 -0500 $
-# $Source: lib/Games/Framework/RCP/Exceptions.pm $
-
 package Games::Framework::RCP::Exceptions;
 
 use warnings;
 use strict;
 use utf8;
 
-our $VERSION = '0.02';
+our $VERSION = '0.05';
 
 use Exception::Class (
-    'Games::Framework::RCP::Exceptions::Database' => {
+    'Private' => {
+        description => 'Illegal access of private subroutine.',
+    },
+    'DB_Gen_Exception' => {
         description => 'Database related issues.'
     },
-    'Games::Framework::RCP::Exceptions::Database::Invalid_Type' => {
-        isa         => 'Games::Framework::RCP::Exceptions::Database',
+    'DB_Invalid_Type' => {
+        isa         => 'DB_Gen_Exception',
         description => 'Violations of database types.'
     },
-    'Games::Framework::RCP::Exceptions::Database::Missing_Credentials' => {
-        isa         => 'Games::Framework::RCP::Exceptions::Database',
-        description => 'Missing username or password.'
-    },
-    'Games::Framework::RCP::Exceptions::Database::Non_Existant' => {
-        isa         => 'Games::Framework::RCP::Exceptions::Database',
+    'DB_Non_Existant' => {
+        isa         => 'DB_Gen_Exception',
         description => 'Record does not exist.'
     },
-    'Games::Framework::RCP::Exceptions::Database::Non_Unique' => {
-        isa         => 'Games::Framework::RCP::Exceptions::Database',
+    'DB_Non_Unique' => {
+        isa         => 'DB_Gen_Exception',
         description => 'Violations of [uniq] or [pk].'
+    },
+    'DB_Missing_Params' => {
+        isa         => 'DB_Gen_Exception',
+        description => 'Not enough information for inserting data.'
     },
 );
 
@@ -48,15 +47,15 @@ Games::Framework::RCP::Exceptions - List of the various exceptions.
 
 =head1 VERSION
 
-This is version 0.02 of the module.
+0.05
 
 =head1 SYNOPSIS
 
 To use the modules:
 
  use Games::Framework::RCP::Exceptions;
- # Find the right exception (using L<Games::Framework::RCP::Exceptions::Database|Games::Framework::RCP::Exceptions::Database>)
- Games::Framework::RCP::Exceptions::Database->throw( error => 'Your message here.' );
+ # Find the right exception (in this case, DB_Gen_Exception)
+ DB_Gen_Exception->throw( error => 'Your message here.' );
 
 =head1 DESCRIPTION
 

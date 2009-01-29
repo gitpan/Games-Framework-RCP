@@ -1,37 +1,39 @@
 Games-Framework-RCP
 
 This is the (currently in development) set of modules for a
-Final Fantasy Tactics based database driven game.  The goal
+video game tactics based database driven game.  The goal
 is to provide implementation independent functionality
 so that this can be used anywhere, from IRC to websites or more.
 
-Very little is complete at this time.  I have only
-uploaded what I felt was confident to be shown.  Either way,
-feel free to scrutinize it and let me know how to improve
-everything.
+Why was the acronym "RCP" chosen though?  Others that have
+made a similar system like this often pretended their system
+was in a computer known as a Ref Control Panel.  The name
+has stuck.  Feel free to call it something else in your
+own home game.
+
+STATUS
+
+Enough of the database tables are implemented for those
+daring to try it out.  However, there is no driver program
+yet, so either lots of coding is required, or one must
+manipulate the database directly.
+
+REQUIREMENTS
+
+Make sure you have Perl 5.10, DBIx::Class, Exceptions::Class,
+and Sub::Exporter.  Also, having a database installed would be
+beneficial.
 
 INSTALLATION
 
-Due to how CPAN and CPANPLUS work, installing
-this module and its dependencies do not install the database that
-drives this system.  Therefore, the following instructions are given
-to ensure that everything gets installed.
+Either install via CPAN/CPANPLUS, or use the tried and true method:
 
-1)  Download the tar.gz file.
-2)  Extract the tar.gz file.  In the command line,
-    tar xvf Games-Framework-RCP.tar.gz> will work.
-3)  Change to the extracted directory.
-4)  Type in the command line: perl Makefile.PL.
-5)  Load the pg.sql file from the scripts directory into your
-    PostGresQL system.
-6)  Set the environment variables DB_TEST_USERNAME and
-    DB_TEST_PASSWORD with your preferred username and password.
-7)  Type in the command line: make.
-8)  Type in the command line: make test.
-    If the tests do not pass, let me know.
-9)  Type in the command line: sudo make install.
-10) Create/use a "driver program" to interface with these modules.
-11) Have fun!
+perl Makefile.PL
+make
+make test
+make install
+
+Of course, you may need priviledges for make install.
 
 SUPPORT AND DOCUMENTATION
 
@@ -57,7 +59,7 @@ You can also look for information at:
 
 COPYRIGHT AND LICENCE
 
-Copyright (C) 2008 Jason Felds
+Copyright (C) 2009 Jason Felds
 
 This program is free software; you can redistribute it and/or modify it
 under the same terms as Perl itself.

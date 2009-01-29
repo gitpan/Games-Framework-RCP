@@ -1,18 +1,16 @@
 --- #YAML:1.0
 name:                Games-Framework-RCP
-version:             0.01_02
-abstract:            Final Fantasy Tactics based battle system.
+version:             0.02_01
+abstract:            Generic video game tactics based battle system.
 license:             perl
 author:              
     - Jason Felds <wolfman.ncsu2000@gmail.com>
 generated_by:        ExtUtils::MakeMaker version 6.42
 distribution_type:   module
 requires:     
-    Class::Singleton:              1.4
-    DBD::Pg:                       2.11
+    DBIx::Class:                   0.0801
     Exception::Class:              1.23
-    Readonly:                      1.03
-    Scalar::Util::Numeric:         0.02
+    Sub::Exporter:                 0.981
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.3.html
     version: 1.3
