@@ -1,16 +1,13 @@
 package Games::Framework::RCP::Setup;
 
-use 5.010;
-
 use warnings;
 use strict;
 
-use Data::Dumper;
 use Sub::Exporter -setup => { exports => [ qw(login get_schema load_defaults load_custom) ] };
 
 use Games::Framework::RCP::Database;
 
-our $VERSION = '0.10';
+our $VERSION = '0.11';
 
 my $schema;
 
@@ -213,7 +210,7 @@ Games::Framework::RCP::Setup
 
 =head1 VERSION
 
-0.10
+0.11
 
 =head1 SYNOPSIS
 

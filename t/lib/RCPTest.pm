@@ -1,7 +1,5 @@
 package RCPTest;
 
-use 5.010;
-
 use Test::More;
 
 eval "use DBD::SQLite";

@@ -1,6 +1,6 @@
 package Games::Framework::RCP;
 
-our $VERSION = '0.02_01';
+our $VERSION = '0.02_02';
 
 1;
 
@@ -22,15 +22,15 @@ Games::Framework::RCP - Generic video game tactics based battle system.
 
 =item *
 
-Perl version 5.10 or higher
-
-=item *
-
 L<DBIx::Class|DBIx::Class>
 
 =item *
 
 L<Exceptions::Class|Exceptions::Class>
+
+=item *
+
+L<SQL::Translator|SQL::Translator>
 
 =item *
 
@@ -40,7 +40,7 @@ L<Sub::Exporter|Sub::Exporter>
 
 =head1 VERSION
 
-0.02_01
+0.02_02
 
 =head1 SYNOPSIS
 
@@ -137,6 +137,23 @@ This author acknowledges the previous authors of such battle systems
 that were used for the mIRC program.  The latest author of such a system,
 Kafei, is currently hosting his own using said mIRC program.  More info
 can be found here: http://www.roleplayx.net/wiki/index.php/RoleplayX
+
+This author also acknowledges the CPAN Testers that love to try installing
+development modules.  Among the things found by them:
+
+=over 4
+
+=item *
+
+Perl 5.8 will work fine for this module.  There should be no exclusive
+5.10 code.
+
+=item *
+
+SQL::Translator does not come with DBIx::Class.  That requirement
+is now explicit.
+
+=back
 
 =head1 LICENSE AND COPYRIGHT
 

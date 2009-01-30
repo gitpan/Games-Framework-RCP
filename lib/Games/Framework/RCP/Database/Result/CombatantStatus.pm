@@ -1,11 +1,9 @@
 package Games::Framework::RCP::Database::Result::CombatantStatus;
 
-use 5.010;
-
 use strict;
 use warnings;
 
-our $VERSION = '0.20';
+our $VERSION = '0.21';
 
 use base qw/DBIx::Class/;
 
@@ -62,7 +60,7 @@ Games::Framework::RCP::Database::Result::CombatantStatus
 
 =head1 VERSION
 
-0.20
+0.21
 
 =head1 DESCRIPTION
 

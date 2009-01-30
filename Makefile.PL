@@ -18,6 +18,7 @@ WriteMakefile(
     {
         'DBIx::Class' => 0.08010,
         'Exception::Class' => 1.23,
+        'SQL::Translator' => 0.08,
         'Sub::Exporter' => 0.981,
     },
     dist                => { COMPRESS => 'gzip -9f', SUFFIX => 'gz', },

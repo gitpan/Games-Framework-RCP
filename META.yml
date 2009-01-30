@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Games-Framework-RCP
-version:             0.02_01
+version:             0.02_02
 abstract:            Generic video game tactics based battle system.
 license:             perl
 author:              
@@ -10,6 +10,7 @@ distribution_type:   module
 requires:     
     DBIx::Class:                   0.0801
     Exception::Class:              1.23
+    SQL::Translator:               0.08
     Sub::Exporter:                 0.981
 meta-spec:
     url:     http://module-build.sourceforge.net/META-spec-v1.3.html

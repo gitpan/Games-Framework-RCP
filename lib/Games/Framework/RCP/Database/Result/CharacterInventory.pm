@@ -1,7 +1,5 @@
 package Games::Framework::RCP::Database::Result::CharacterInventory;
 
-use 5.010;
-
 use strict;
 use warnings;
 use utf8;
@@ -73,7 +71,7 @@ Games::Framework::RCP::Database::Result::CharacterInventory
 
 =head1 VERSION
 
-0.20
+0.21
 
 =head1 DESCRIPTION
 

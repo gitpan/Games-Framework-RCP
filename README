@@ -20,7 +20,7 @@ manipulate the database directly.
 
 REQUIREMENTS
 
-Make sure you have Perl 5.10, DBIx::Class, Exceptions::Class,
+Make sure you have DBIx::Class, Exceptions::Class, SQL::Translator,
 and Sub::Exporter.  Also, having a database installed would be
 beneficial.
 

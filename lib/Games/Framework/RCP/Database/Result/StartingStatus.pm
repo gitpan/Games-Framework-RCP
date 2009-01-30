@@ -1,11 +1,9 @@
 package Games::Framework::RCP::Database::Result::StartingStatus;
 
-use 5.010;
-
 use strict;
 use warnings;
 
-our $VERSION = '0.02';
+our $VERSION = '0.21';
 
 use base qw/DBIx::Class/;
 
@@ -66,7 +64,7 @@ Games::Framework::RCP::Database::Result::StartingStatus
 
 =head1 VERSION
 
-0.20
+0.21
 
 =head1 DESCRIPTION
 
