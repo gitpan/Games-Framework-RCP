@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::CombatantStatus;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -56,11 +56,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::CombatantStatus
+Games::Framework::RCP::Database::Result::CombatantStatus - The status effects that the combatants are inflicted with.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

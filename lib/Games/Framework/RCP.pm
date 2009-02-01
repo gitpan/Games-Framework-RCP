@@ -1,6 +1,6 @@
 package Games::Framework::RCP;
 
-our $VERSION = '0.02_02';
+our $VERSION = '0.03_01';
 
 1;
 
@@ -40,7 +40,7 @@ L<Sub::Exporter|Sub::Exporter>
 
 =head1 VERSION
 
-0.02_02
+0.03_01
 
 =head1 SYNOPSIS
 

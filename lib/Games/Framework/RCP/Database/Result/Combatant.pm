@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::Combatant;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -176,6 +176,12 @@ __PACKAGE__->belongs_to(class => 'Games::Framework::RCP::Database::Result::Class
 __PACKAGE__->has_many(combatant_inventories => 'Games::Framework::RCP::Database::Result::CombatantInventory', 'fkey_combatant');
 __PACKAGE__->many_to_many(items => 'combatant_inventories', 'combatants');
 
+__PACKAGE__->has_many(combatants => 'Games::Framework::RCP::Database::Result::CombatantCurrency', 'fkey_combatant');
+__PACKAGE__->many_to_many(currency => 'combatants', 'currency');
+
+__PACKAGE__->has_many(combatant_equip_histories => 'Games::Framework::RCP::Database::Result::CombatantEquipHistory', 'fkey_combatant');
+__PACKAGE__->many_to_many(equip_histories => 'combatant_equip_histories', 'items');
+
 sub sqlt_deploy_hook {
     my ($self, $sqlt_table) = @_;
     
@@ -192,11 +198,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::Combatant
+Games::Framework::RCP::Database::Result::Combatant - The list of everyone that is fighting currently.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

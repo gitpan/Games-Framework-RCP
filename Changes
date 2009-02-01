@@ -12,3 +12,7 @@ Revision history for Games-Framework-RCP
 0.02_02     2009/01/30  13:00:00 EST
             Remove Perl 5.10 requirement.
             Fixed SQL::Translator Prerequisite.
+
+0.03_01     2009/02/01  13:00:00 EST
+            Added Currency, Item Equip History tables.
+            Add proper descriptions to all tables (public thing).

@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::CharCooldown;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -57,11 +57,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::CharCooldown
+Games::Framework::RCP::Database::Result::CharCooldown - How long must characters cool down before using a move?
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

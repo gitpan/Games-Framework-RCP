@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -33,9 +33,14 @@ __PACKAGE__->add_columns(
 );
 __PACKAGE__->set_primary_key('id_color');
 __PACKAGE__->add_unique_constraint([qw/fg bg/]);
+
 __PACKAGE__->might_have(move_type => 'Games::Framework::RCP::Database::Result::MoveType', 'fkey_color', {cascade_delete => 0});
+
 __PACKAGE__->might_have(character => 'Games::Framework::RCP::Database::Result::Character', 'fkey_color', {cascade_delete => 0});
+
 __PACKAGE__->might_have(status_effect => 'Games::Framework::RCP::Database::Result::StatusEffect', 'fkey_color', {cascade_delete => 0});
+
+__PACKAGE__->might_have(currency => 'Games::Framework::RCP::Database::Result::Currency', 'fkey_color', {cascade_delete => 0});
 
 sub sqlt_deploy_hook {
     my ($self, $sqlt_table) = @_;
@@ -51,11 +56,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::Color
+Games::Framework::RCP::Database::Result::Color - The foreground/background color combinations.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

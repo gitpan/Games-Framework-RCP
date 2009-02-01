@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::ItemCategory;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -50,11 +50,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::ItemCategory
+Games::Framework::RCP::Database::Result::ItemCategory - A list of the various item categories.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

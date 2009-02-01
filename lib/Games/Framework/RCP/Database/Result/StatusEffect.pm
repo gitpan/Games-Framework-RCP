@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::StatusEffect;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -90,11 +90,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::StatusEffect
+Games::Framework::RCP::Database::Result::StatusEffect - The big list of status effects.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

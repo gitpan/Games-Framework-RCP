@@ -8,6 +8,7 @@ lib/Games/Framework/RCP/Exceptions.pm
 lib/Games/Framework/RCP/Database.pm
 lib/Games/Framework/RCP/Database/Result/Callscript.pm
 lib/Games/Framework/RCP/Database/Result/CharCooldown.pm
+lib/Games/Framework/RCP/Database/Result/CharacterCurrency.pm
 lib/Games/Framework/RCP/Database/Result/CharacterInventory.pm
 lib/Games/Framework/RCP/Database/Result/CharacterMove.pm
 lib/Games/Framework/RCP/Database/Result/Character.pm
@@ -16,10 +17,13 @@ lib/Games/Framework/RCP/Database/Result/ClassLevelUp.pm
 lib/Games/Framework/RCP/Database/Result/ClassMove.pm
 lib/Games/Framework/RCP/Database/Result/Class.pm
 lib/Games/Framework/RCP/Database/Result/Color.pm
-lib/Games/Framework/RCP/Database/Result/Combatant.pm
+lib/Games/Framework/RCP/Database/Result/CombatantCurrency.pm
+lib/Games/Framework/RCP/Database/Result/CombatantEquipHistory.pm
 lib/Games/Framework/RCP/Database/Result/CombatantInventory.pm
 lib/Games/Framework/RCP/Database/Result/CombatantStatus.pm
 lib/Games/Framework/RCP/Database/Result/CombinedItem.pm
+lib/Games/Framework/RCP/Database/Result/Combatant.pm
+lib/Games/Framework/RCP/Database/Result/Currency.pm
 lib/Games/Framework/RCP/Database/Result/ItemCategory.pm
 lib/Games/Framework/RCP/Database/Result/ItemStat.pm
 lib/Games/Framework/RCP/Database/Result/ItemUsage.pm

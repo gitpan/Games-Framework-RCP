@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::Item;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -86,6 +86,9 @@ __PACKAGE__->many_to_many(characters => 'character_inventories', 'items');
 __PACKAGE__->has_many(combatant_inventories => 'Games::Framework::RCP::Database::Result::CombatantInventory', 'fkey_item');
 __PACKAGE__->many_to_many(combatants => 'combatant_inventories', 'items');
 
+__PACKAGE__->has_many(combatant_equip_histories => 'Games::Framework::RCP::Database::Result::CombatantEquipHistory', 'fkey_item');
+__PACKAGE__->many_to_many(equip_histories => 'combatant_equip_histories', 'combatants');
+
 sub sqlt_deploy_hook {
     my ($self, $sqlt_table) = @_;
     
@@ -100,11 +103,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::Item
+Games::Framework::RCP::Database::Result::Item - Every single item available in the game.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::MoveCost;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -51,11 +51,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::MoveCost
+Games::Framework::RCP::Database::Result::MoveCost - The list of the various move costs.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

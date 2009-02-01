@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::Character;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -69,6 +69,9 @@ __PACKAGE__->many_to_many(moves => 'char_cooldowns', 'characters');
 __PACKAGE__->has_many(character_inventories => 'Games::Framework::RCP::Database::Result::CharacterInventory', 'fkey_character');
 __PACKAGE__->many_to_many(items => 'character_inventories', 'characters');
 
+__PACKAGE__->has_many(characters => 'Games::Framework::RCP::Database::Result::CharacterCurrency', 'fkey_character');
+__PACKAGE__->many_to_many(currency => 'characters', 'currency');
+
 sub sqlt_deploy_hook {
     my ($self, $sqlt_table) = @_;
     
@@ -83,11 +86,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::Character
+Games::Framework::RCP::Database::Result::Character - Every single character involved in this game one way or another.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

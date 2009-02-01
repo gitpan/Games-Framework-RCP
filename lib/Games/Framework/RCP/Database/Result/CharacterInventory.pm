@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = '0.20';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class/;
 
@@ -67,11 +67,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database::Result::CharacterInventory
+Games::Framework::RCP::Database::Result::CharacterInventory - Every item a character has in storage.
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 DESCRIPTION
 

@@ -7,7 +7,7 @@ use Sub::Exporter -setup => { exports => [ qw(login get_schema load_defaults loa
 
 use Games::Framework::RCP::Database;
 
-our $VERSION = '0.11';
+our $VERSION = '0.12';
 
 my $schema;
 
@@ -206,11 +206,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Setup
+Games::Framework::RCP::Setup - Get a connection and load quick defaults.
 
 =head1 VERSION
 
-0.11
+0.12
 
 =head1 SYNOPSIS
 

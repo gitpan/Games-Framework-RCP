@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database;
 use strict;
 use warnings;
 
-our $VERSION = '0.21';
+our $VERSION = '0.22';
 
 use base qw/DBIx::Class::Schema/;
 
@@ -15,11 +15,11 @@ __END__
 
 =head1 NAME
 
-Games::Framework::RCP::Database
+Games::Framework::RCP::Database - DBIx::Class setup file
 
 =head1 VERSION
 
-0.21
+0.22
 
 =head1 SYNOPSIS
 
