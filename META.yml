@@ -1,6 +1,6 @@
 --- #YAML:1.0
 name:                Games-Framework-RCP
-version:             0.03_01
+version:             0.04_01
 abstract:            Generic video game tactics based battle system.
 license:             perl
 author:              

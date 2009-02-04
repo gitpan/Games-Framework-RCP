@@ -16,3 +16,8 @@ Revision history for Games-Framework-RCP
 0.03_01     2009/02/01  13:00:00 EST
             Added Currency, Item Equip History tables.
             Add proper descriptions to all tables (public thing).
+
+0.04_01     2009/02/04  13:00:00 EST
+            Fixed CharacterCurrency version number.
+            Added FloorItem table.
+            Added hazard related tables.

@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use utf8;
 
-our $VERSION = '0.22';
+our $VERSION = '0.23';
 
 use base qw/DBIx::Class/;
 
@@ -42,6 +42,8 @@ __PACKAGE__->might_have(status_effect => 'Games::Framework::RCP::Database::Resul
 
 __PACKAGE__->might_have(currency => 'Games::Framework::RCP::Database::Result::Currency', 'fkey_color', {cascade_delete => 0});
 
+__PACKAGE__->might_have(hazard_set => 'Games::Framework::RCP::Database::Result::HazardSet', 'fkey_color', {cascade_delete => 0});
+
 sub sqlt_deploy_hook {
     my ($self, $sqlt_table) = @_;
     
@@ -60,7 +62,7 @@ Games::Framework::RCP::Database::Result::Color - The foreground/background color
 
 =head1 VERSION
 
-0.22
+0.23
 
 =head1 DESCRIPTION
 

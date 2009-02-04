@@ -24,6 +24,11 @@ lib/Games/Framework/RCP/Database/Result/CombatantStatus.pm
 lib/Games/Framework/RCP/Database/Result/CombinedItem.pm
 lib/Games/Framework/RCP/Database/Result/Combatant.pm
 lib/Games/Framework/RCP/Database/Result/Currency.pm
+lib/Games/Framework/RCP/Database/Result/FloorItem.pm
+lib/Games/Framework/RCP/Database/Result/Hazard.pm
+lib/Games/Framework/RCP/Database/Result/HazardFlag.pm
+lib/Games/Framework/RCP/Database/Result/HazardSet.pm
+lib/Games/Framework/RCP/Database/Result/HazardWithFlag.pm
 lib/Games/Framework/RCP/Database/Result/ItemCategory.pm
 lib/Games/Framework/RCP/Database/Result/ItemStat.pm
 lib/Games/Framework/RCP/Database/Result/ItemUsage.pm

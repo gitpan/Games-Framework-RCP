@@ -3,7 +3,7 @@ package Games::Framework::RCP::Database::Result::MoveWithFlag;
 use strict;
 use warnings;
 
-our $VERSION = '0.22';
+our $VERSION = '0.23';
 
 use base qw/DBIx::Class/;
 
@@ -54,7 +54,7 @@ Games::Framework::RCP::Database::Result::MoveWithFlag - Every move with all of t
 
 =head1 VERSION
 
-0.22
+0.23
 
 =head1 DESCRIPTION
 
@@ -76,10 +76,10 @@ using the traditional auto incrementing.
 This ID points to the Move table in a many to one mapping.
 Many flags can be attached to a single move.
 
-=head2 fkey_move_cost
+=head2 fkey_move_flag
 
 This ID points to the Move Costs table in a many to one mapping.
-Many moves use the same cost.
+Many moves use the same flag.
 
 =head1 SUBROUTINES/METHODS
 
